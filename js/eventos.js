@@ -1,5 +1,5 @@
  fetch('https://servicodados.ibge.gov.br/api/v1/localidades/regioes')
-    .then(res => res.json())
+    .then(res => res.json()) 
     .then(regioes => {
         function addOption(cada) {
             select_regiao.innerHTML += `<option value="${cada.id}">${cada.nome}</option>`;
